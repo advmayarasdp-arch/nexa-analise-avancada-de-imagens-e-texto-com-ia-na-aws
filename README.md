@@ -1,5 +1,4 @@
 # 🤖 Análise Avançada de Imagens e Texto com IA na AWS
-
 Projeto prático desenvolvido para o bootcamp da **DIO (Digital Innovation One)**, focado na exploração de serviços gerenciados de **Inteligência Artificial (IA)** da AWS para visão computacional e processamento de linguagem natural (NLP).
 
 
@@ -8,10 +7,8 @@ Projeto prático desenvolvido para o bootcamp da **DIO (Digital Innovation One)*
 Demonstrar a aplicação prática e o funcionamento direto de duas ferramentas de IA da AWS:
 
 1.	Amazon Rekognition: Para análise de imagens, detecção de rótulos/objetos e extração de texto (OCR).
-2.	
-3.	Amazon Comprehend: Para processamento de linguagem natural, análise de sentimentos e extração de entidades em textos.
+2.	Amazon Comprehend: Para processamento de linguagem natural, análise de sentimentos e extração de entidades em textos.
 
-4.	
 🛠️ Serviços Utilizados
 
 •	Amazon Rekognition: Serviço de visão computacional pré-treinado.
@@ -32,8 +29,7 @@ O fluxo de teste foi estruturado em duas etapas independentes e complementares:
 •	Detecção de Labels (Rótulos): Identificação de objetos, cenários e contexto visual com percentual de confiança.
 •	Text in Image (OCR): Extração de frases ou palavras presentes na imagem.
 
-
-3. Testes de Linguagem Natural (Amazon Comprehend)
+2. Testes de Linguagem Natural (Amazon Comprehend)
 •	Entrada de Texto: Trechos de texto digitados ou extraídos via OCR na etapa anterior.
 •	Análise de Sentimentos: Identificação da tonalidade do texto (Positivo, Negativo, Neutro, Misto).
 •	Extração de Entidades: Identificação de nomes de pessoas, locais, organizações, datas e moedas.
@@ -41,9 +37,8 @@ O fluxo de teste foi estruturado em duas etapas independentes e complementares:
 
 📸 Evidências dos Testes e Resultados
 
-1. Amazon Rekognition
+### Amazon Rekognition
 
-2. 
 •	Resultado: O modelo identificou os objetos com nível de confiança superior a 90% e realizou a leitura do texto visível na imagem.
 
 ### 1. Amazon Rekognition — Detecção de Rótulos (Label Detection)
@@ -52,12 +47,13 @@ O fluxo de teste foi estruturado em duas etapas independentes e complementares:
 ### 2. Amazon Rekognition — Extração de Texto (Text in Image)
 ![Texto na Imagem](text_in_image.png)
 
+### Amazon Comprehend
+
+•	Resultado: O serviço categorizou o tom da mensagem como Positivo com alta precisão e mapeou as entidades mencionadas.
 ### Análise de Sentimento e Entidades (Amazon Comprehend)
 * **Texto de Teste:** "O atendimento foi excelente e a entrega em São Paulo ocorreu dentro do prazo."
 * **Sentimento Detectado:** Positivo (Confiança: 99%)
 * **Entidades Mapeadas:** "São Paulo" (Localização)
-
-•	Resultado: O serviço categorizou o tom da mensagem como Positivo com alta precisão e mapeou as entidades mencionadas.
 
 
 💡 Insights e Aprendizados
@@ -81,7 +77,7 @@ Opção 1: Via Console AWS (Sem código)
 2.	Abra o Amazon Rekognition e utilize a aba Try Demo para testar imagens e ver os JSONs de retorno.
 3.	Abra o Amazon Comprehend e navegue até Real-time analysis para colar trechos de texto e avaliar a análise de sentimentos e entidades.
 
-4.	
+   
 Opção 2: Via Script Python (boto3)
 1.	Instale a biblioteca da AWS:
 - Bash
